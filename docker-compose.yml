@@ -18,7 +18,7 @@ services:
     links:
       - jenkins
     volumes:
-      - "./ngxinx/:/etc/nginx/conf.d/"
+      - "./nginx/:/etc/nginx/conf.d/"
     environment:
       VIRTUAL_HOST: jenkins.snapit.ee
       LETSENCRYPT_HOST: jenkins.snapit.ee
